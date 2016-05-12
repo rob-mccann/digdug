@@ -252,7 +252,7 @@ SauceLabsTunnel.prototype = util.mixin(Object.create(_super), /** @lends module:
 		}
 
 		this.logTrafficStats && args.push('-z', Math.floor(this.logTrafficStats / 1000));
-		this.verbose && args.push('-v');
+		this.verbose && args.push('-vv');
 
 		return args;
 	},
